@@ -141,6 +141,13 @@ header .navbar a{
   
 }
 
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 .about .image img{
   width:45vw;
 }
@@ -154,6 +161,54 @@ header .navbar a{
   font-size: 1.7rem;
   color:#666;
   padding:1rem 0;
+}
+.feature{
+  font-size: 4rem;
+  color:var(--red);
+  text-align: center;
+}
+ 
+.content1{
+  border: 3px solid red;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.content2{
+  border: 3px solid red;
+  margin: 10px;
+  padding: 20px;
+}
+.content3{
+  border: 3px solid red;
+  margin: 10px;
+  padding: 20px;
+}
+.about .feature .content1  h3{
+  font-size: 4rem;
+  color:var(--red);
+  text-align: center;
+ 
+}
+.about .feature  .content2  h3{
+  font-size: 4rem;
+  color:var(--red);
+  text-align: center;
+}
+.about .feature  .content3 h3{
+  font-size: 4rem;
+  color:var(--red);
+  text-align: center;
+}
+.content3 btn{
+  text-align: center;
+}
+.about .feature .content1 , .content2 , .content3 p {
+  font-size: 1.7rem;
+  color:#666;
+  padding:1rem 0;
+  text-align: center;
+
 }
 
 .services{
