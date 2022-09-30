@@ -23,6 +23,10 @@ section{
   padding-top: 11rem;
   padding-bottom: 9rem;
 }
+*::selection{
+  background:var(--red);
+  color:#fff;
+}
 
 .background{
   background:url("images/background.png") no-repeat;
@@ -41,6 +45,9 @@ section{
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
+.btn:hover{
+  background: #333;
+}
 .up-and-down::before,
 .up-and-down::after{
   content: '';
@@ -70,9 +77,12 @@ section{
 }
 
 header{
+  position: fixed;
+
   top:0; left: 0; right: 0;
   background-size: cover;
   background-position: bottom;
+  background:url("images/header-bg.png") no-repeat;
   z-index: 10000;
   padding:1.5rem 7%;
   padding-bottom: 6rem;
@@ -96,7 +106,9 @@ header .navbar a{
   margin-left: 2rem;
   color:#333;
 }
-
+header .navbar a:hover{
+  color:var(--red);
+}
 #menu-bars{
   font-size: 3rem;
   border:.1rem solid #333;
