@@ -17,13 +17,19 @@ html{
   scroll-behavior: smooth;
 }
 
+#footer{
+  text-align: center;
+    padding: 10px;
+    padding: 0;
+}
+
 section{
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding:0 7%;
   padding-top: 11rem;
   padding-bottom: 9rem;
-}
-*::selection{
+} */
+::selection{
   background:var(--red);
   color:#fff;
 }
@@ -77,9 +83,11 @@ section{
 }
 
 header{
-  position: fixed;
+  /* position: fixed; */
 
-  top:0; left: 0; right: 0;
+  /* top:0; left: 0; right: 0; */
+  position: sticky;
+  top: 0;
   background-size: cover;
   background-position: bottom;
   background:url("images/header-bg.png") no-repeat;
@@ -456,7 +464,7 @@ header .navbar a:hover{
   color:var(--red);
 }
 
-.footer::before{
+/* .footer::before{
   content:'';
   position: absolute;
   top:-8rem; left: 50%;
@@ -465,11 +473,19 @@ header .navbar a:hover{
   background-size: cover;
   height: 8rem;
   width:100%;
+} */
+
+
+header{
+  background: #acacac;
+  height: 50px;
+  align-items: baseline;
 }
 
-
-
-
+header a{
+  color: black !important;
+  font-weight: bold;
+}
 
 
 
