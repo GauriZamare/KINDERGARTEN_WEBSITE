@@ -9,8 +9,14 @@
   text-transform: capitalize;
   text-decoration: none;
   outline:none; border:none;
- 
+  transition: all .2s ease-out;
 }
+
+*::selection{
+  background:var(--red);
+  color:#fff;
+}
+
 html{
   font-size: 62.5%;
   overflow-x: hidden;
@@ -22,10 +28,6 @@ section{
   padding:0 7%;
   padding-top: 11rem;
   padding-bottom: 9rem;
-}
-*::selection{
-  background:var(--red);
-  color:#fff;
 }
 
 .background{
@@ -46,8 +48,9 @@ section{
 }
 
 .btn:hover{
-  background: #333;
+  background:#333;
 }
+
 .up-and-down::before,
 .up-and-down::after{
   content: '';
@@ -78,11 +81,10 @@ section{
 
 header{
   position: fixed;
-
   top:0; left: 0; right: 0;
+  background:url("images/header-bg.png") no-repeat;
   background-size: cover;
   background-position: bottom;
-  background:url("images/header-bg.png") no-repeat;
   z-index: 10000;
   padding:1.5rem 7%;
   padding-bottom: 6rem;
@@ -106,9 +108,11 @@ header .navbar a{
   margin-left: 2rem;
   color:#333;
 }
+
 header .navbar a:hover{
   color:var(--red);
 }
+
 #menu-bars{
   font-size: 3rem;
   border:.1rem solid #333;
@@ -153,13 +157,6 @@ header .navbar a:hover{
   
 }
 
-.about{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-
 .about .image img{
   width:45vw;
 }
@@ -173,54 +170,6 @@ header .navbar a:hover{
   font-size: 1.7rem;
   color:#666;
   padding:1rem 0;
-}
-.feature{
-  font-size: 4rem;
-  color:var(--red);
-  text-align: center;
-}
- 
-.content1{
-  border: 3px solid red;
-  margin: 10px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.content2{
-  border: 3px solid red;
-  margin: 10px;
-  padding: 20px;
-}
-.content3{
-  border: 3px solid red;
-  margin: 10px;
-  padding: 20px;
-}
-.about .feature .content1  h3{
-  font-size: 4rem;
-  color:var(--red);
-  text-align: center;
- 
-}
-.about .feature  .content2  h3{
-  font-size: 4rem;
-  color:var(--red);
-  text-align: center;
-}
-.about .feature  .content3 h3{
-  font-size: 4rem;
-  color:var(--red);
-  text-align: center;
-}
-.content3 btn{
-  text-align: center;
-}
-.about .feature .content1 , .content2 , .content3 p {
-  font-size: 1.7rem;
-  color:#666;
-  padding:1rem 0;
-  text-align: center;
-
 }
 
 .services{
@@ -455,20 +404,6 @@ header .navbar a:hover{
 .footer span{
   color:var(--red);
 }
-
-.footer::before{
-  content:'';
-  position: absolute;
-  top:-8rem; left: 50%;
-  transform: translateX(-50%);
-  background:url("images/img-top.png") no-repeat;
-  background-size: cover;
-  height: 8rem;
-  width:100%;
-}
-
-
-
 
 
 
