@@ -405,6 +405,20 @@ header .navbar a:hover{
   color:var(--red);
 }
 
+.footer::before{
+  content:'';
+  position: absolute;
+  top:-8rem; left: 50%;
+  transform: translateX(-50%);
+  background:url("images/img-top.png") no-repeat;
+  background-size: cover;
+  height: 8rem;
+  width:100%;
+}
+
+
+
+
 
 
 
